@@ -100,7 +100,7 @@ export default function NavBar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://www.linkedin.com/in/nikhildevas"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
@@ -108,7 +108,7 @@ export default function NavBar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#33333333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://github.com/nikhildev91"
             >
               GitHub <FaGithub size={30} />
             </a>
@@ -116,7 +116,7 @@ export default function NavBar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="mailto: asdevnikhil@gmail.com"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -124,7 +124,7 @@ export default function NavBar() {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://drive.google.com/file/d/1jjUsAGsIbsnSygEvEzvDLnxu6jM-m99-/view?usp=share_link"
             >
               Resume <BsPersonLinesFill size={30} />
             </a>
