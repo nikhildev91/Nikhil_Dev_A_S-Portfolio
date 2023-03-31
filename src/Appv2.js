@@ -14,6 +14,9 @@ function Appv2() {
       <Skills />
       <Work />
       <Contact />
+      <footer className="w-full h-12 flex justify-center items-center px-5">
+        <p>Copyright @ Nikhil Dev A S 2023</p>
+      </footer>
     </div>
   );
 }
