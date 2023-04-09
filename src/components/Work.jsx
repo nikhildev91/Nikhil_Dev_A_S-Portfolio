@@ -4,8 +4,10 @@ import React, { useEffect, useState } from 'react';
 // import { data } from '../data/data.js';
 import Axios from 'axios';
 import { API_URL } from '../utility/urls.js';
+import { useNavigate } from 'react-router-dom';
 
 const Work = () => {
+  const navigate = useNavigate();
   // const project = data;
   const [projects, setProjects] = useState([]);
 
@@ -43,22 +45,23 @@ const Work = () => {
                   {item.name}
                 </span>
                 <div className="pt-8 text-center ">
-                  <a href={item.github} target="_blank">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
+                  {/* <a href={item.github} target="_blank"> */}
+                  <button
+                    onClick={() => navigate(`/work-details/${item._id}`)}
+                    className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Code
-                    </button>
-                  </a>
-                  <a href={item.live} target="_blank">
+                  >
+                    View Project Details
+                  </button>
+                  {/* </a> */}
+                  {/* <a href={item.live} target="_blank">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
                     >
                       Live
                     </button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

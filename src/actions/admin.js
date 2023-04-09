@@ -51,7 +51,8 @@ export const logout = () => (dispatch) => {
 };
 
 export const addProject =
-  (projectName, gitLink, liveLink, image) => async (dispatch) => {
+  (projectName, gitLink, liveLink, image, description, projectstatus) =>
+  async (dispatch) => {
     console.log({ image });
     try {
       dispatch({
@@ -71,6 +72,8 @@ export const addProject =
           gitLink,
           liveLink,
           image,
+          description,
+          status: projectstatus,
         },
         config
       );
